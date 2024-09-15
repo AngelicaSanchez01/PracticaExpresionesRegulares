@@ -9,50 +9,21 @@ public class Main {
         do {
             option = Menu();
             switch (option) {
-                case 1:
-                    new CarPlates().validate();
-                    break;
-                case 2:
-                    new LandlinePhonesMedellin().validate();
-                    break;
-                case 3:
-                    new MobilePhonesColombia().validate();
-                    break;
-                case 4:
-                    new ResidentialAddressesMedellin().validate();
-                    break;
-                case 5:
-                    new EmailAddresses().validate();
-                    break;
-                case 6:
-                    new DateFormat().validate();
-                    break;
-                case 7:
-                    new HourFormat().validate();
-                    break;
-                case 8:
-                    new IDCardsColombia().validate();
-                    break;
-                case 9:
-                    new VariableDeclarationsJava().validate();
-                    break;
-                case 10:
-                    new URLFormat().validate();
-                    break;
-                case 11:
-                    new FirstAndLastNames().validate();
-                    break;
-                case 12:
-                    new SecurePassword().validate();
-                    break;
-                case 13:
-                    new DoubleNumber().validate();
-                    break;
-                case 0:
-                    JOptionPane.showMessageDialog(null, "Saliendo del programa");
-                    break;
-                default:
-                    JOptionPane.showMessageDialog(null, "Opción no válida");
+                case 1 -> new CarPlates().validate();
+                case 2 -> new LandlinePhonesMedellin().validate();
+                case 3 -> new MobilePhonesColombia().validate();
+                case 4 -> new ResidentialAddressesMedellin().validate();
+                case 5 -> new EmailAddresses().validate();
+                case 6 -> new DateFormat().validate();
+                case 7 -> new HourFormat().validate();
+                case 8 -> new IDCardsColombia().validate();
+                case 9 -> new VariableDeclarationsJava().validate();
+                case 10 -> new URLFormat().validate();
+                case 11 -> new FirstAndLastNames().validate();
+                case 12 -> new SecurePassword().validate();
+                case 13 -> new DoubleNumber().validate();
+                case 0 -> JOptionPane.showMessageDialog(null, "Saliendo del programa");
+                default -> JOptionPane.showMessageDialog(null, "Opción no válida");
             }
         } while (option != 0);
     }
